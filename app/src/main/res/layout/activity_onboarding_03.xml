@@ -6,67 +6,53 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFFFFF"
-    tools:context=".Onboarding01Activity">
+    tools:context=".Onboarding03Activity">
 
-    <!-- Title -->
+    <!-- Heading -->
     <TextView
-        android:id="@+id/titleText"
+        android:id="@+id/StayMotivatedTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Welcome to"
-        android:textSize="22sp"
+        android:text="Stay Motivated"
+        android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="#008B8B"
+        android:textColor="#20B2AA"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="40dp"/>
 
-    <TextView
-        android:id="@+id/appName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="HEALTHIFY"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        android:letterSpacing="0.1"
-        android:textColor="#20B2AA"
-        app:layout_constraintTop_toBottomOf="@id/titleText"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="8dp"/>
-
     <!-- Onboarding Image -->
     <ImageView
-        android:id="@+id/onboardingImage"
+        android:id="@+id/onboardingImage3"
         android:layout_width="280dp"
         android:layout_height="250dp"
-        android:contentDescription="Wellness illustration"
+        android:contentDescription="Motivation illustration"
         android:scaleType="fitCenter"
-        app:srcCompat="@drawable/onboarding_1"
-        app:layout_constraintTop_toBottomOf="@id/appName"
+        app:srcCompat="@drawable/onboarding_5"
+        app:layout_constraintTop_toBottomOf="@id/StayMotivatedTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="30dp"/>
 
     <!-- Description -->
     <TextView
-        android:id="@+id/descriptionText"
+        android:id="@+id/StayMotivated"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
-        android:text="Track your daily habits, boost your mood, and stay healthy with simple routines. Let’s begin your wellness journey!"
+        android:text="Log your feelings with emojis, set hydration reminders, and keep a positive lifestyle with Healthify."
         android:textSize="16sp"
         android:textColor="#444444"
-        app:layout_constraintTop_toBottomOf="@id/onboardingImage"
+        app:layout_constraintTop_toBottomOf="@id/onboardingImage3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"/>
 
-    <!-- Navigation Buttons -->
+    <!-- Next Button -->
     <Button
-        android:id="@+id/nextButton"
+        android:id="@+id/nextButton3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="16dp"
@@ -74,14 +60,15 @@
         android:backgroundTint="#20B2AA"
         android:paddingStart="24dp"
         android:paddingEnd="24dp"
-        android:text="Next →"
+        android:text="Get Started →"
         android:textColor="#FFFFFF"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <!-- Skip -->
     <TextView
-        android:id="@+id/skipText"
+        android:id="@+id/skipText3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
