@@ -1,6 +1,9 @@
 package com.example.myapplication_madlab03
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -15,6 +18,22 @@ class Onboarding03Activity : AppCompatActivity() {
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+        // Find views
+        val nextButton: Button = findViewById(R.id.nextButton3)
+        val skipText: TextView = findViewById(R.id.skipText3)
+
+        // Navigate to Onboarding 2
+        nextButton.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        // Skip to Home
+        skipText.setOnClickListener {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+            finish() // so user can’t go back to onboarding
         }
     }
 }

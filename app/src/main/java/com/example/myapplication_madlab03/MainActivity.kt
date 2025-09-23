@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         // ⏳ Navigate after 3 seconds
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, Onboarding01Activity::class.java)
+            val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
             finish() // close splash so user can’t go back
         }, 3000) // 3000ms = 3 seconds
