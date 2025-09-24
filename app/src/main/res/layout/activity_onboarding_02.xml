@@ -13,14 +13,14 @@
         android:id="@+id/BuildHealthyHabits"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
         android:text="Build Healthy Habits"
+        android:textColor="#20B2AA"
         android:textSize="26sp"
         android:textStyle="bold"
-        android:textColor="#20B2AA"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Onboarding Image -->
     <ImageView
